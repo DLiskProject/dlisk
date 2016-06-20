@@ -1,0 +1,72 @@
+{
+    "port": 8050,
+    "address": "0.0.0.0",
+    "serveHttpAPI": true,
+    "serveHttpWallet": true,
+    "version": "0.1.0",
+    "fileLogLevel": "info",
+    "logFileName": "logs.log",
+    "consoleLogLevel": "log",
+    "db": {
+        "host": "localhost",
+        "port": 5432,
+        "database": "dlisk_test",
+        "user": null,
+        "password": "password",
+        "poolSize": 20,
+        "poolIdleTimeout": 30000,
+        "reapIntervalMillis": 1000,
+        "logEvents": [
+            "warn"
+        ]
+    },
+    "api": {
+        "access": {
+            "whiteList": []
+        }
+    },
+    "peers": {
+        "list": [
+            {
+                "ip": "45.63.42.84",
+                "port": 8050
+            },
+            {
+                "ip": "45.63.40.31",
+                "port": 8050
+            }
+        ],
+        "blackList": [],
+        "options": {
+            "timeout": 4000
+        }
+    },
+    "forging": {
+        "force": false,
+        "secret": [],
+        "access": {
+            "whiteList": [
+                "127.0.0.1"
+            ]
+        }
+    },
+    "loading": {
+        "verifyOnLoading": true,
+        "loadPerIteration": 5000
+    },
+    "ssl": {
+        "enabled": false,
+        "options": {
+            "port": 443,
+            "address": "0.0.0.0",
+            "key": "./ssl/dlisk.key",
+            "cert": "./ssl/dlisk.crt"
+        }
+    },
+    "dapp": {
+        "masterrequired": true,
+        "masterpassword": "",
+        "autoexec": []
+    },
+    "nethash": "b00b1e0b087a0280739b2cec317fe44b755e01ebd3f46e393a1c29d42c0db021"
+}
