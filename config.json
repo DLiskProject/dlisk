@@ -10,7 +10,7 @@
     "db": {
         "host": "localhost",
         "port": 5432,
-        "database": "dlisk_test",
+        "database": "dlisk_main",
         "user": "postgres",
         "password": "postgres",
         "poolSize": 20,
@@ -55,17 +55,17 @@
         "loadPerIteration": 5000
     },
     "ssl": {
-        "enabled": true,
+        "enabled": false,
         "options": {
             "port": 443,
             "address": "0.0.0.0",
-            "key": "../certs/dlisklogin-open.key",
-            "cert": "../certs/1_login.dlisk.com_bundle.crt"
+            "key": "../certs/dlisk.key",
+            "cert": "../certs/dlisk.crt"
         }
     },
     "dapp": {
         "masterrequired": true,
-        "masterpassword": "7YemZNkLvAwF",
+        "masterpassword": "",
         "autoexec": []
     },
     "nethash": "b00b1e0b087a0280739b2cec317fe44b755e01ebd3f46e393a1c29d42c0db021"
