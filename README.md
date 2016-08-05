@@ -88,6 +88,7 @@ node app.js -p [port] -a [address] -c [config-path]
 
 - Ubuntu LTS 14.04
 - Arch Linux
+- Debian 8 "Jessie"
 
 ## Authors
 
